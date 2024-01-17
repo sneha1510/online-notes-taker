@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Online Notes Taker</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+ <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo/list-2389219_1280.png" alt="Your Logo" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+           My Notes Taker
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Out</a>
+                
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Text editor column -->
+            <div class="col-md-9">
+                <div class="note-editor">
+                    <!-- Title input -->
+                    <div class="form-group">
+                        <label for="note-title">Title:</label>
+                        <input type="text" class="form-control" id="note-title">
+                    </div>
+
+                    <!-- Formatting buttons -->
+                    <div class="formatting-buttons">
+                        <button onclick="document.execCommand('bold', false, null)"><i class="fas fa-bold"></i></button>
+                        <button onclick="document.execCommand('italic', false, null)"><i class="fas fa-italic"></i></button>
+                        <button onclick="document.execCommand('underline', false, null)"><i class="fas fa-underline"></i></button>
+                        <button onclick="document.execCommand('strikethrough', false, null)"><i class="fas fa-strikethrough"></i></button>
+                    </div>
+
+                    <!-- Text field -->
+                    <div id="note-content" contenteditable="true" style="min-height: 350px; border: 1px solid #ccc; margin-top: 10px;"></div>
+                    <!-- Save button -->
+                    <button class="btn btn-primary mt-2" onclick="saveNotes()">Save Note</button>
+                </div>
+            </div>
+
+            <!-- Container div for text and My Notes button -->
+            <div class="col-md-3 my-notes-container">
+               
+                <!-- Text above My Notes button -->
+             <p class="text-muted mb-2 d-block">Click to see your previous notes</p>
+
+                <!-- My Notes button -->
+                <button class="btn btn-info my-notes-button" data-toggle="modal" data-target="#myNotesModal">My Notes</button>
+            </div>
+        </div>
+    </main>
+    
+
+    
+    <div class="container mt-4">
+        <!-- Content goes here -->
+    </div>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Your Online Notes Taker. All rights reserved.</p>
+    </footer>
+
+
+
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add Font Awesome JS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha384-rJS2/VIoFMy0b5TdoMnQc77d85f+skCJ2HE2O+ebrRqOpTh5btXQvq5B6b5F9LkY" crossorigin="anonymous"></script>
+   
+    
+ 
+  
+</body>
+
+
+</html>
