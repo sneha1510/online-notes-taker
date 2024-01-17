@@ -1,0 +1,58 @@
+.note-editor {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.formatting-buttons button {
+    margin-right: 5px;
+}
+
+.previous-notes {
+    margin-top: 20px;
+}
+
+/* Style for the container div of My Notes button */
+.my-notes-container {
+    margin-bottom: 20px;
+}
+
+/* Style for the My Notes button */
+.my-notes-button {
+    width: 100%;
+}
+.about-us-section {
+    padding: 20px;
+}
+
+.help-section {
+    padding: 20px;
+}
+
+/* Style for the columns */
+.help-column {
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    background-color: #189dd2; /* Sky blue color */
+    color: #fff; /* White text */
+    padding: 20px ;
+    text-align: center;
+    
+    
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+    
