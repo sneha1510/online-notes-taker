@@ -2,118 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Online Notes Taker</title>
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Add Font Awesome CSS link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Online Notes Taker</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo/list-2389219_1280.png" alt="Your Logo" width="30" height="30" class="d-inline-block align-top" loading="lazy">
-           My Notes Taker
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signin.html">Sign In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="help.html">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="privacy policy.html">Privacy Policy</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-
-    <!--signup-->
-    <div class="container d-flex align-items-center justify-content-center" >
-        <div class="card p-4">
-          <h3 class="text-center mb-4">Sign Up</h3>
-          <form id="signupForm">
-            <div class="mb-3">
-              <label for="signupName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="signupName" required>
-            </div>
-            <div class="mb-3">
-              <label for="signupEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="signupEmail" required>
-            </div>
-            <div class="mb-3">
-              <label for="signupMobile" class="form-label">Mobile Number</label>
-              <input type="text" class="form-control" id="signupMobile" required>
-            </div>
-            <div class="mb-3">
-              <label for="signupUsername" class="form-label">Username</label>
-              <input type="text" class="form-control" id="signupUsername" required>
-            </div>
-            <div class="mb-3">
-              <label for="signupPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="signupPassword" required>
-            </div>
-            <div class="mb-3">
-              <label for="confirmPassword" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="confirmPassword" required>
-            </div>
-            <button type="button" class="btn btn-primary w-100" onclick="validateSignUpForm()">Sign Up</button>
-          </form>
-          <p class="text-center mt-3">Already have an account? <a href="signin.html">Sign In</a></p>
-        </div>
-      </div>
-    
-    
-    <!--signup close-->
-
-     
-
-
-
-    <div class="container mt-4">
-        <!-- Content goes here -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo/list-2389219_1280.png" alt="Your Logo" width="30" height="30"
+        class="d-inline-block align-top" loading="lazy">
+      My Notes Taker
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signin.html">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="privacy policy.html">Privacy Policy</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+  <!--signup-->
+  <div class="container d-flex align-items-center justify-content-center">
+    <div class="card p-4">
+      <h3 class="text-center mb-4">Sign Up</h3>
+      <form id="signupForm">
+        <div class="mb-3">
+          <label for="signupEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="signupEmail" required>
         </div>
-        <p>&copy; 2024 Your Online Notes Taker. All rights reserved.</p>
-    </footer>
+        <div class="mb-3">
+          <label for="signupPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="signupPassword" required>
+        </div>
+        <button id="signup-btn"  class="btn btn-primary w-100" >Sign Up</button>
+      </form>
+      <p class="text-center mt-3">Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+  </div>
+  <!--signup close-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="container mt-4">
+    <!-- Content goes here -->
+  </div>
 
-    <!-- Add Font Awesome JS script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha384-rJS2/VIoFMy0b5TdoMnQc77d85f+skCJ2HE2O+ebrRqOpTh5btXQvq5B6b5F9LkY" crossorigin="anonymous"></script>
-    </body>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2024 Your Online Notes Taker. All rights reserved.</p>
+  </footer>
 
-    </html>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Add Font Awesome JS script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha384-rJS2/VIoFMy0b5TdoMnQc77d85f+skCJ2HE2O+ebrRqOpTh5btXQvq5B6b5F9LkY" crossorigin="anonymous"></script>
+
+    <script src="./firebase-scripts/signUp.js" type="module"></script>
+
+ 
+</body>
+
+</html>
